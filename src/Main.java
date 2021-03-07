@@ -24,8 +24,10 @@ public class Main {
             @Override
             public void showBalance(Shorty shorty) {
                 System.out.println("> Баланс коротышки - " + shorty.getName());
-                if (shorty.getCash() != null) System.out.println("Наличка: Деньги = " + shorty.getCash().getMoneyAmount() + " | Акции = " + shorty.getCash().getStocksAmount());
-                if (shorty.getBankBalance() != null) System.out.println("Банковский баланс: Деньги = " + shorty.getBankBalance().getMoneyAmount());
+                if (shorty.getCash() != null) System.out.println("Наличка: Деньги = " + shorty.getCash().getMoneyAmount()
+                        + " | Акции = " + shorty.getCash().getStocksAmount());
+                if (shorty.getBankBalance() != null) System.out.println("Банковский баланс: Деньги = "
+                        + shorty.getBankBalance().getMoneyAmount());
             }
         };
 

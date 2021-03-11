@@ -20,7 +20,7 @@ public class Main {
         Shorty miga = new Shorty(Locations.STREET, new Balance.CashBalance(0, 0),
                 new Balance.BankBalance(0), "Miga", true);
 
-        BalanceStatus ShortiesBalance = new BalanceStatus() {
+        BalanceStatus shortiesBalance = new BalanceStatus() {
             @Override
             public void showBalance(Shorty shorty) {
                 System.out.println("> Баланс коротышки - " + shorty.getName());
@@ -31,7 +31,7 @@ public class Main {
             }
         };
 
-        ShortiesBalance.showBalance(buyer_1);
+        shortiesBalance.showBalance(buyer_1);
 
         office.openGiganticPlantSociety(miga);
 

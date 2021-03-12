@@ -198,7 +198,7 @@ public class Shorty implements StocksActions, MoneyActions{
 
     private IPosition getPosition() {
         class ShortyPosition implements IPosition {
-            final Locations location = Shorty.this.place;
+            Locations location = Shorty.this.place;
 
             @Override
             public Locations getLocation() {

@@ -196,7 +196,7 @@ public class Shorty implements StocksActions, MoneyActions{
         Locations getLocation();
     }
 
-    public IPosition getPosition() {
+    private IPosition getPosition() {
         class ShortyPosition implements IPosition {
             final Locations location = Shorty.this.place;
 
